@@ -1,0 +1,23 @@
+Notes:
+Quickly sets unique config in the Access Control Lists (ACL) for finer 
+permission control of specific users & groups.
+
+Will generally require root privileges, use sudo if needed. Or, just login
+as root, what could go wrong?
+
+
+Examples:
+
+Give read & write access to a specific user
+	setfacl -m u:bill:rw ~/Documents/diary.md
+
+Give read access to a specific group
+	setfacl -m g:spys:r ~/Documents/diary.md
+
+Remove user or group from ACL entry entirely
+	setfacl -x u:sam ~/Documents/diary.md
+
+Reset ACL
+	setfacl -b ~/Documents/diary/md
+
+Note: Add -R flag to recursively apply to files within a directory
