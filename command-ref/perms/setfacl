@@ -20,4 +20,4 @@ Remove user or group from ACL entry entirely
 Reset ACL
 	setfacl -b ~/Documents/diary/md
 
-Note: Add -R flag to recursively apply to files within a directory
+Note: Add -R flag to recursively apply to files within a directory.
