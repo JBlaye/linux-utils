@@ -1,0 +1,13 @@
+Notes:
+
+A command utility to help redirect stdout to a file while still displaying the output
+in the terminal. Used in conjuction with the pipe '|' operator.
+
+Examples:
+
+echo 'hello world!' | tee logfile
+	This will send the text 'hello world!' to 'logfile' and overwrite
+
+echo 'hello world!' | tee -a logfile
+	Adding the '-a' option will append the output to the file rather than
+	overwriting the existing the data inside
