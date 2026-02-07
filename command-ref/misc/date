@@ -1,0 +1,6 @@
+Notes:
+
+A simple command to display date & time, see man page for formatting options.
+
+Fav. format: 
+	date +[%F\ %r] = [2026-02-07 12:16:06 AM]
